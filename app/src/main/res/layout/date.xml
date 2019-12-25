@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="2dp"
+    android:paddingEnd="2dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nepaliDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingTop="18dp"
+        android:paddingBottom="2dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="12"/>
+
+
+    <TextView
+        android:id="@+id/englishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="10sp"
+        android:paddingEnd="10sp"
+        android:paddingStart="10sp"
+        android:paddingBottom="8dp"
+        android:text="11"/>
+
+
+    <TextView
+        android:id="@+id/tithi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:text="Asthami"/>
+
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="9sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorForegroundLighter"
+        android:text="Ghatasthapana"/>
+
+</LinearLayout>

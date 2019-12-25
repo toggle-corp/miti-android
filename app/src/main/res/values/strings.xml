@@ -1,0 +1,79 @@
+<!--<resources>-->
+<!--    <string name="app_name">Miti</string>-->
+
+<!--    <string-array name="dayShortNames">-->
+<!--        <item>Sun</item>-->
+<!--        <item>Mon</item>-->
+<!--        <item>Tue</item>-->
+<!--        <item>Wed</item>-->
+<!--        <item>Thu</item>-->
+<!--        <item>Fri</item>-->
+<!--        <item>Sat</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="days">-->
+<!--        <item>Sunday</item>-->
+<!--        <item>Monday</item>-->
+<!--        <item>Tuesday</item>-->
+<!--        <item>Wednesday</item>-->
+<!--        <item>Thursday</item>-->
+<!--        <item>Friday</item>-->
+<!--        <item>Saturday</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="nepaliMonths">-->
+<!--        <item>Baisakh</item>-->
+<!--        <item>Jestha</item>-->
+<!--        <item>Asadh</item>-->
+<!--        <item>Shrawan</item>-->
+<!--        <item>Bhadra</item>-->
+<!--        <item>Ashoj</item>-->
+<!--        <item>Kartik</item>-->
+<!--        <item>Mangsir</item>-->
+<!--        <item>Poush</item>-->
+<!--        <item>Magh</item>-->
+<!--        <item>Falgun</item>-->
+<!--        <item>Chaitra</item>-->
+<!--    </string-array>-->
+<!--</resources>-->
+
+<resources>
+    <string name="app_name">Miti</string>
+    <string name="app_name_nepali">मिति</string>
+
+    <string-array name="dayShortNames">
+        <item>आइत</item>
+        <item>सोम</item>
+        <item>मंगल</item>
+        <item>बुध</item>
+        <item>बिही</item>
+        <item>शुक्र</item>
+        <item>शनि</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>आइतबार</item>
+        <item>सोमबार</item>
+        <item>मंगलबार</item>
+        <item>बुधबार</item>
+        <item>बिहीबार</item>
+        <item>शुक्रबार</item>
+        <item>शनिबार</item>
+    </string-array>
+
+    <string-array name="nepaliMonths">
+        <item>बैशाख</item>
+        <item>जेष्ठ</item>
+        <item>अषाढ</item>
+        <item>श्रावण</item>
+        <item>भाद्र</item>
+        <item>असोज</item>
+        <item>कात्तिक</item>
+        <item>मंसिर</item>
+        <item>पौष</item>
+        <item>माघ</item>
+        <item>फाल्गुन</item>
+        <item>चैत्र</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".monthly.MonthFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp">
+
+            <TextView
+                android:id="@+id/nepaliMonthTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baishakh, 2079"
+                android:textColor="@color/colorForeground"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/englishMonthTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorForegroundLight"
+                android:textSize="14sp"
+                android:text="Sep/Oct, 2010"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorHighlightDark"/>
+
+        <GridView
+            android:id="@+id/dayHeadersGrid"
+            android:layout_width="match_parent"
+            android:numColumns="7"
+            android:layout_height="wrap_content"/>
+        <GridView
+            android:id="@+id/datesGrid"
+            android:numColumns="7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <include layout="@layout/date_details" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
