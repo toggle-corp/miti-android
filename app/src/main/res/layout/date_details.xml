@@ -9,14 +9,14 @@
     app:behavior_hideable="false"
     app:behavior_peekHeight="0dp"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-    android:background="@android:color/background_light"
+    android:background="?android:attr/colorBackground"
     android:padding="16dp">
 
     <TextView
         android:id="@+id/dateDetailsNepali"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorForeground"
+        android:textColor="?android:attr/textColorPrimary"
         android:textSize="20sp"
         android:text="24 Baisakh, 2076"/>
 
@@ -24,7 +24,7 @@
         android:id="@+id/dateDetailsEnglish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorForegroundLight"
+        android:textColor="?android:attr/textColorSecondary"
         android:textSize="16sp"
         android:text="2 April, 2017"/>
 

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    android:background="?android:attr/colorBackground">
 
     <LinearLayout
         android:orientation="vertical"
@@ -24,14 +24,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Baishakh, 2079"
-                android:textColor="@color/colorForeground"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="16sp"/>
 
             <TextView
                 android:id="@+id/englishMonthTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorForegroundLight"
+                android:textColor="?android:attr/textColorSecondary"
                 android:textSize="14sp"
                 android:text="Sep/Oct, 2010"/>
         </LinearLayout>

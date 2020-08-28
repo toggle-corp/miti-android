@@ -11,5 +11,8 @@
 
     <color name="colorForeground">#000000</color>
     <color name="colorForegroundLight">#414141</color>
+    <color name="colorForegroundGray">#707070</color>
     <color name="colorForegroundLighter">#a0a0a0</color>
+
+    <color name="colorWhite">#fff</color>
 </resources>

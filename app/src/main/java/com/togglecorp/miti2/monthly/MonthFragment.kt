@@ -56,6 +56,8 @@ class MonthFragment : Fragment() {
 
         val monthlyData = mitiData?.optJSONObject("data")?.optJSONObject(year.toString())?.optJSONArray(month.toString())
 
+        val today = NepaliDate.today()
+
 
         // Gather all nepali dates for this month
         for (i in 0..(7*6)) {
@@ -68,21 +70,24 @@ class MonthFragment : Fragment() {
                 val event = if (extra?.isNull("event") == true) null else extra?.optString("event")
                 val holiday = if (extra?.isNull("holiday") == true) false else extra?.optBoolean("holiday") == true
 
-                nepaliDates.add(NepaliDate(
+                val nepaliDate = NepaliDate(
                     startDate.year,
                     startDate.month,
                     date,
                     tithi,
                     event,
                     holiday
-                ))
+                )
+                nepaliDates.add(nepaliDate)
+
+                if (today.year == year && today.month == month && today.day == date) {
+                    select(nepaliDate)
+                }
             }
             else {
                 nepaliDates.add(null)
             }
         }
-
-        val today = NepaliDate.today()
         // Set today
         dateAdapter.setToday(today)
         // Refresh adapter
@@ -106,10 +111,6 @@ class MonthFragment : Fragment() {
         }
 
         view.englishMonthTitle.text = engMonth1 + " / " + engMonth2 + ", " + yearLabel
-
-        if (today.year == year && today.month == month) {
-            select(today)
-        }
     }
 
     override fun onResume() {

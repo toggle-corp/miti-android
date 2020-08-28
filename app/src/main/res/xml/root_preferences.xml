@@ -1,0 +1,40 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notification">
+        <CheckBoxPreference
+            android:key="pref_show_date_notification"
+            android:title="Show date in notification area"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="pref_show_date_lock_screen"
+            android:title="Show on lock screen"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Theme">
+        <SwitchPreference
+            android:key="pref_dark_theme"
+            android:title="Dark Theme"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:title="@string/app_name"
+            android:summary="Version 2.0"/>
+
+        <Preference
+            android:title="Developed by"
+            android:summary="Togglecorp">
+
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://togglecorp.com" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

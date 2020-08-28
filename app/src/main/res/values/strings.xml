@@ -75,5 +75,6 @@
         <item>फाल्गुन</item>
         <item>चैत्र</item>
     </string-array>
+    <string name="title_activity_settings">Settings</string>
 </resources>
 

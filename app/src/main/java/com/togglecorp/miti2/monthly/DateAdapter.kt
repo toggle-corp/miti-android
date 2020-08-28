@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat
 import com.togglecorp.miti2.R
 import com.togglecorp.miti2.converter.NepaliDate
 import com.togglecorp.miti2.converter.numToString
+import com.togglecorp.miti2.utils.getThemeColor
 import kotlinx.android.synthetic.main.date.view.*
 
 class DateAdapter(val context: Context, val dates: ArrayList<NepaliDate?>, val onSelected: (NepaliDate) -> Unit) : BaseAdapter() {
@@ -53,18 +54,38 @@ class DateAdapter(val context: Context, val dates: ArrayList<NepaliDate?>, val o
         }
 
         if (nepaliDate?.holiday == true || position % 7 == 6) {
-            nepaliDateView.setTextColor(ContextCompat.getColor(context, R.color.colorAccent))
+            nepaliDateView.setTextColor(
+                getThemeColor(
+                    context,
+                    R.attr.colorAccent
+                )
+            )
             nepaliDateView.setTypeface(nepaliDateView.typeface, Typeface.NORMAL)
         } else {
-            nepaliDateView.setTextColor(ContextCompat.getColor(context, R.color.colorForeground))
+            nepaliDateView.setTextColor(
+                getThemeColor(
+                    context,
+                    android.R.attr.textColorPrimary
+                )
+            )
             nepaliDateView.setTypeface(nepaliDateView.typeface, Typeface.NORMAL)
         }
 
 
         if (nepaliDate?.day == today?.day && nepaliDate?.year == today?.year && nepaliDate?.month == today?.month) {
-            view.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimaryLight))
+            view.setBackgroundColor(
+                getThemeColor(
+                    context,
+                    R.attr.colorHighlight
+                )
+            )
         } else if (selected != null && (nepaliDate?.day == selected?.day && nepaliDate?.year == selected?.year && nepaliDate?.month == selected?.month)) {
-            view.setBackgroundColor(ContextCompat.getColor(context, R.color.colorHighlight))
+            view.setBackgroundColor(
+                getThemeColor(
+                    context,
+                    R.attr.colorSelection
+                )
+            )
         } else {
             view.setBackgroundColor(ContextCompat.getColor(context, android.R.color.transparent))
         }
