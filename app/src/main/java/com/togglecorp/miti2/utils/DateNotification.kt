@@ -7,6 +7,7 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import com.togglecorp.miti2.MainActivity
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Build
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
@@ -77,14 +78,16 @@ object DateNotification {
         }
 
         // Custom layout
-        val remoteViews = RemoteViews(context.packageName, R.layout.notification)
-        remoteViews.setTextViewText(R.id.title, title)
-        remoteViews.setTextViewText(R.id.subtitle, body)
-        remoteViews.setImageViewResource(R.id.icon, DATE_ICONS[today.day - 1])
+//        val remoteViews = RemoteViews(context.packageName, R.layout.notification)
+//        remoteViews.setTextViewText(R.id.title, title)
+//        remoteViews.setTextViewText(R.id.subtitle, body)
+//        remoteViews.setImageViewResource(R.id.icon, DATE_ICONS[today.day - 1])
 
         val builder = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(DATE_ICONS[today.day - 1])
-            .setContent(remoteViews)
+            .setContentTitle(title)
+            .setContentText(body)
+//            .setContent(remoteViews)
             .setVisibility(visibility)
             .setSound(null)
             .setShowWhen(false)

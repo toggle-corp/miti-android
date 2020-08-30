@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="8dp"
-    android:paddingBottom="8dp">
+    android:paddingBottom="8dp"
+    style="@style/TextAppearance.Compat.Notification.Title">
 
     <ImageButton
         android:id="@+id/icon"
@@ -13,8 +14,9 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:src="@drawable/date_icon_1"
-        android:tint="@color/colorForeground"
         android:scaleType="fitCenter"
+        android:tint="?android:attr/textColorPrimaryInverse"
+        style="@style/TextAppearance.Compat.Notification.Title"
         android:background="@android:color/transparent" />
 
     <LinearLayout
@@ -27,14 +29,14 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorForeground"/>
+            style="@style/TextAppearance.Compat.Notification.Title"/>
 
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:textColor="@color/colorForegroundLight"
+            style="@style/TextAppearance.Compat.Notification"
             android:textSize="12sp"/>
     </LinearLayout>
 
